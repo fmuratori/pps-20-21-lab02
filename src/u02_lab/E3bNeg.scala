@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.{Test}
 
 
-object Neg2ab {
+object E3bNeg {
 
   def negMethod(f: String=>Boolean): String=>Boolean = s => !f(s)
 

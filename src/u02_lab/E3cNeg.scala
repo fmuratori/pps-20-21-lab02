@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 
-object Neg2ac {
+object E3cNeg {
 
   def neg[A](f: A=>Boolean): A=>Boolean = s => !f(s)
 

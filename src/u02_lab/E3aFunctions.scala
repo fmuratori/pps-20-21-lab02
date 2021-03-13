@@ -3,7 +3,7 @@ package u02_lab
 import org.junit.jupiter.api.Assertions._
 import org.junit.jupiter.api.Test
 
-object Functions2aa {
+object E3aFunctions {
 
   val parity: Int => String = (x:Int) => {
     parityFunction(x)
