@@ -8,8 +8,6 @@ object E3cNeg {
 
   def neg[A](f: A=>Boolean): A=>Boolean = s => !f(s)
 
-  /////////////////////////////////////////////////////////////////////////////
-
   @Test def testIsStringNotEmpty(): Unit = {
     val isEmpty: String => Boolean = _==""
     val notEmpty: String => Boolean = neg(isEmpty)

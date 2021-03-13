@@ -10,8 +10,6 @@ object E3bNeg {
 
   val negLambda: (String=>Boolean) => (String=>Boolean) = f => s => !f(s)
 
-  /////////////////////////////////////////////////////////////////////////////
-
   val empty: String => Boolean = _==""
 
   @Test def testNegMethod(){
