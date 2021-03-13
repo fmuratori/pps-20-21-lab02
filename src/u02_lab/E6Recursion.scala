@@ -3,7 +3,7 @@ package u02_lab
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-object E6Fibonacci {
+object E6Recursion {
 
 //  @annotation . tailrec
   def fib(n: Int): Int = n match {
