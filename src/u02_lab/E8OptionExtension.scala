@@ -3,7 +3,7 @@ package u02_lab
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-object E7SumProductModule {
+object E8OptionExtension {
 
   val PI = 3.14
 
@@ -24,22 +24,22 @@ object E7SumProductModule {
     case class Rectangle(l1: Double, l2:Double) extends Shape
     case class Circle(r: Double) extends Shape
     case class Square(i: Int) extends Shape
-  }
 
-  import Shape._
-  val rectangle:Rectangle = Rectangle(2, 3)
-  val circle: Shape = Circle(10)
-  val square: Shape = Square(1)
+  }
+  
+  val rectangle:Shape.Rectangle = Shape.Rectangle(2, 3)
+  val circle: Shape = Shape.Circle(10)
+  val square: Shape = Shape.Square(1)
 
   @Test def testPerimeter(): Unit = {
-    assertEquals(10, perimeter(rectangle))
-    assertEquals(314, perimeter(circle))
-    assertEquals(4, perimeter(square))
+    assertEquals(10, Shape.perimeter(rectangle))
+    assertEquals(314, Shape.perimeter(circle))
+    assertEquals(4, Shape.perimeter(square))
   }
 
   @Test def testArea(): Unit = {
-    assertEquals(6, area(rectangle))
-//    assertEquals(62.8, area(circle))
-    assertEquals(1, area(square))
+    assertEquals(6, Shape.area(rectangle))
+//    assertEquals(62.8, Shape.area(circle))
+      assertEquals(1, Shape.area(square))
   }
 }
