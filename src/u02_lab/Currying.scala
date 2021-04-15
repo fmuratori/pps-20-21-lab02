@@ -1,4 +1,4 @@
-package u02
+package u02_lab
 
 object Currying extends App {
 
@@ -23,7 +23,7 @@ object Currying extends App {
   val curriedMultAsFunction: Double => Double => Double = x => y => x*y
 
   println(curriedMultAsFunction(10)(2)) // 20
-  println(curriedMultAsFunction) // u02.Currying$$$Lambda$7/...
-  println(curriedMultAsFunction(10)) // u02.Currying$$$Lambda$12/...
+  println(curriedMultAsFunction) // u02_lab.u02.Currying$$$Lambda$7/...
+  println(curriedMultAsFunction(10)) // u02_lab.u02.Currying$$$Lambda$12/...
 
 }

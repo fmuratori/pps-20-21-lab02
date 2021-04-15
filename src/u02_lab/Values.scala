@@ -1,4 +1,4 @@
-package u02
+package u02_lab
 
 object Values extends App {
 

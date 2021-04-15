@@ -2,10 +2,9 @@ package u02
 
 import org.junit.jupiter.api.Assertions._
 import org.junit.jupiter.api.Test
+import u02_lab.BTrees.Tree._
 
 class BTreesTest {
-
-  import BTrees.Tree._
   val tree = Branch(Branch(Leaf(1),Leaf(2)),Leaf(1))
 
   @Test def testCount(){
